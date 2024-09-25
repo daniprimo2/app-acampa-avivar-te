@@ -1,0 +1,28 @@
+@use 'variables'
+
+.loading-container
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background: rgba(255, 255, 255, 0.5)
+    z-index: 9999
+    .spinner
+        border: 16px solid #f6f6f648
+        border-top: 16px solid #fd7305
+        border-radius: 50%
+        background-color: transparent
+        width: 120px
+        height: 120px
+        animation: spin 1s linear infinite
+@keyframes spin
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
+        

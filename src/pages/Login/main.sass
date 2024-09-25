@@ -1,0 +1,108 @@
+@use 'variables'
+
+#login
+    display: flex
+    background: variables.$cor-linear-login
+    justify-content: center
+    align-items: center
+    width: variables.$login-width
+    max-width: variables.$max-login-width
+    height: variables.$login-height
+    max-height: variables.$max-login-height
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    border: 2px solid trasnparet
+    border-radius: 2rem
+    box-shadow: 0 0 10px #3d3d3d
+    img
+        background: transparent
+        
+    form
+        background-color: transparent
+
+    h1
+        text-align: center
+        font-size: 1.5rem
+        color: #fd7305
+        background: transparent
+        margin: 15px
+    #campo-credenciais
+        display: flex
+        flex-direction: column
+        background-color: transparent
+        backdrop-filter: blur(10px)
+        padding-right: 15%
+        padding-left: 15%
+        padding-top: 5%
+        padding-bottom: 15%
+        border-radius: 1rem
+
+        .campo
+            display: flex
+            position: relative
+            background-color: transparent
+            width: 100%
+            height: 50px
+            margin: 22px auto
+            input
+                width: 100%
+                height: 100%
+                background-color: transparent
+                outline: none
+                border: 4px solid #09683c
+                border-radius: 40px
+                font-size: 15px
+                font-weight: 700
+                padding: 20px
+                color: black
+            .icon
+                position: absolute
+                right: 25px
+                top: 35%
+                transform: translate(-50%)
+                font-size: 16px
+                color: #09683c
+                background-color: transparent
+        .lembra
+            display: flex
+            font-size: 9.2px
+            justify-content: space-between
+            margin: -15px 0 20px
+            background-color: transparent
+            margin-top: 3px
+            label
+                background-color: transparent
+                color: #09683c
+            a
+                color: #09683c
+                text-decoration: none
+                background-color: transparent
+                padding-top: 2px
+            a:hover
+                text-decoration: underline
+            input
+                margin-right: 5px
+        .botao
+            width: 100%
+            height: 50px
+            background-color: #fff
+            border: none
+            outline: none
+            border-radius: 40px
+            box-shadow: 0 0 10px #000
+            cursor: pointer
+            font-size: 18px
+            font-weight: 500
+            text-shadow: none
+        
+        .botao:hover
+            background: #09683c
+            box-shadow: 0 0 20px #07bc0c
+            color: #fff
+        .botao:active
+            transform: translateY(1px)
+
+ 
+
